@@ -4,16 +4,20 @@ import Modal from "@/components/modal";
 import PizzaInsertar from "./insertar";
 import PizzaModificar from "./modificar";
 import PizzaEliminar from "./eliminar";
+import { auth } from "@/auth";
 
 
 export default async function Pizzas() {
     const pizzas = await obtenerPizzas()
+    const session = await auth();
 
     return (
         <div className="flex flex-col gap-4">
-            <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar</p>}>
-                <PizzaInsertar />
-            </Modal>
+            {session?.user?.role === "ADMIN" && (
+                <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar</p>}>
+                    <PizzaInsertar />
+                </Modal>
+            )}
 
             {
                 pizzas.map(pizza =>
@@ -23,14 +27,17 @@ export default async function Pizzas() {
                                 {pizza.nombre}
                             </Link>
                             <p>{pizza.precio} €</p>
+                            {session?.user?.role === "ADMIN" && (
+                                <>
+                                    <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Modificar</p>}>
+                                        <PizzaModificar pizza={pizza} />
+                                    </Modal>
 
-                            <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Modificar</p>}>
-                                <PizzaModificar pizza={pizza} />
-                            </Modal>
-
-                            <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Eliminar</p>}>
-                                <PizzaEliminar pizza={pizza} />
-                            </Modal>
+                                    <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Eliminar</p>}>
+                                        <PizzaEliminar pizza={pizza} />
+                                    </Modal>
+                                </>
+                            )}
 
                         </div>
                         <hr />

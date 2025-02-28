@@ -154,7 +154,7 @@ function PedidoInsertar({ repartidores, pizzas }) {
                 children: "Nuevo pedido"
             }, void 0, false, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -165,13 +165,13 @@ function PedidoInsertar({ repartidores, pizzas }) {
                         type: "datetime-local"
                     }, void 0, false, {
                         fileName: "[project]/src/components/pedidos/insertar.jsx",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -182,13 +182,13 @@ function PedidoInsertar({ repartidores, pizzas }) {
                         placeholder: "Nombre cliente"
                     }, void 0, false, {
                         fileName: "[project]/src/components/pedidos/insertar.jsx",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -199,13 +199,13 @@ function PedidoInsertar({ repartidores, pizzas }) {
                         placeholder: "Dirección cliente"
                     }, void 0, false, {
                         fileName: "[project]/src/components/pedidos/insertar.jsx",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -213,7 +213,7 @@ function PedidoInsertar({ repartidores, pizzas }) {
                 children: "Repartidor"
             }, void 0, false, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -223,12 +223,12 @@ function PedidoInsertar({ repartidores, pizzas }) {
                         children: repartidor.nombre
                     }, repartidor.id, false, {
                         fileName: "[project]/src/components/pedidos/insertar.jsx",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 25
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -236,7 +236,7 @@ function PedidoInsertar({ repartidores, pizzas }) {
                 children: "Pizzas"
             }, void 0, false, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 13
             }, this),
             pizzas.map((pizza)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -246,14 +246,14 @@ function PedidoInsertar({ repartidores, pizzas }) {
                             name: `pizza${pizza.id}`
                         }, void 0, false, {
                             fileName: "[project]/src/components/pedidos/insertar.jsx",
-                            lineNumber: 49,
+                            lineNumber: 50,
                             columnNumber: 25
                         }, this),
                         pizza.nombre
                     ]
                 }, pizza.id, true, {
                     fileName: "[project]/src/components/pedidos/insertar.jsx",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 21
                 }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -261,13 +261,13 @@ function PedidoInsertar({ repartidores, pizzas }) {
                 children: "Insertar pedido"
             }, void 0, false, {
                 fileName: "[project]/src/components/pedidos/insertar.jsx",
-                lineNumber: 59,
+                lineNumber: 60,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/pedidos/insertar.jsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 9
     }, this);
 }

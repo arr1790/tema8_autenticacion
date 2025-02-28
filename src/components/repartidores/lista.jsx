@@ -4,18 +4,18 @@ import Modal from "@/components/modal";
 import RepartidorInsertar from "./insertar";
 import RepartidorModificar from "./modificar";
 import RepartidorEliminar from "./eliminar";
-
+import { auth } from "@/auth";
 
 export default async function Repartidores() {
     const repartidores = await obtenerRepartidores()
-
-
-
+    const session = await auth();
     return (
         <div className="flex flex-col gap-4">
+            {session?.user?.role === "ADMIN" && (
             <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar</p>}>
                 <RepartidorInsertar />
             </Modal>
+            )}
             {
                 repartidores.map(repartidor =>
                     <div key={repartidor.id} className="p-4 bg-slate-200 rounded-lg">
@@ -24,7 +24,8 @@ export default async function Repartidores() {
                                 {repartidor.nombre}
                             </Link>
                             <p>Teléfono: {repartidor.telefono}</p>
-
+                            {session?.user?.role === "ADMIN" && (
+                                <>
                             <Modal openElement={<span className="p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Modificar</span>}>
                                 <RepartidorModificar repartidor={repartidor} />
                             </Modal>
@@ -32,6 +33,8 @@ export default async function Repartidores() {
                             <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Eliminar</p>}>
                                 <RepartidorEliminar repartidor={repartidor} />
                             </Modal>
+                            </>
+                            )}
 
                         </div>
                         <hr />

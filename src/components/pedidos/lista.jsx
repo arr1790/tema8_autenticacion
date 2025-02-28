@@ -4,18 +4,22 @@ import Modal from "@/components/modal";
 import PedidoInsertar from "./insertar";
 import PedidoModificar from "./modificar";
 import PedidoEliminar from "./eliminar";
+import { auth } from "@/auth";
 
 
 export default async function Pedidos() {
     const pedidos = await obtenerPedidos()
     const repartidores = await obtenerRepartidores()
     const pizzas = await obtenerPizzas()
+    const session = await auth();
 
     return (
         <div className="flex flex-col gap-4">
+            {session?.user?.role === 'ADMIN' && (
             <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar</p>}>
                 <PedidoInsertar repartidores={repartidores} pizzas={pizzas} />
             </Modal>
+            )}
             {
                 pedidos.map(pedido =>
                     <div key={pedido.id} className="p-4 mb-4 bg-slate-200 rounded-lg">
@@ -27,13 +31,17 @@ export default async function Pedidos() {
                             <p>Dirección del cliente: {pedido.direccion_cliente}</p>
 
 
-                            <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Modificar</p>}>
-                                <PedidoModificar pedido={pedido} repartidores={repartidores} pizzas={pizzas} />
-                            </Modal>
+                            {session?.user?.role === 'ADMIN' && (
+                                <>
+                                    <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Modificar</p>}>
+                                        <PedidoModificar pedido={pedido} repartidores={repartidores} pizzas={pizzas} />
+                                    </Modal>
 
-                            <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Eliminar</p>}>
-                                <PedidoEliminar pedido={pedido} />
-                            </Modal>
+                                    <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Eliminar</p>}>
+                                        <PedidoEliminar pedido={pedido} />
+                                    </Modal>
+                                </>
+                            )}
                         </div>
                         <hr />
                     </div>
