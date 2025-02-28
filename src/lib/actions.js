@@ -126,6 +126,20 @@ export async function logout() {
     }
 }
 
+export async function insertarRepartidor(formData) {
+    const nombre = formData.get('nombre')
+    const telefono = formData.get('telefono')
+
+    await prisma.repartidor.create({
+        data: {
+            nombre: nombre,
+            telefono: telefono,
+        }
+    })
+
+    revalidatePath('/repartidores')
+
+}
 
 
 export async function modificarRepartidor(formData) {

@@ -305,12 +305,13 @@ const { handlers: { GET, POST }, auth, signIn, signOut } = (0, __TURBOPACK__impo
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
-/* __next_internal_action_entry_do_not_use__ {"000328415909af7cbaf130890596781b07c763ea1b":"logout","001f1e8a85040a97babfbf7e919de4d24182592387":"loginGoogle","004672839cc2d5e0c7bb704ceb4b9402f3e2cec4ec":"loginGithub","00f29742e5614cf00b76212f6e4e33facf9b3b4893":"loginDiscord","4011b8cc17028b635ccd8b4f7ac3bbfcaf49aa6f02":"loginResend","40345cfb172172d2ecf80c62dd9fc1d4dacd5f8d5f":"eliminarRepartidor","406b48a2889a873962899807ef544180cab41c9f4b":"modificarRepartidor","4077177dedb9fa9e9054284b82b1a2019fd1180a5a":"modificarPizza","40b2b4e120054c8044c8d7b34d24ecdab5db81031b":"insertarPizza","40b48b51842cc7d786cb2b3efa329c43be6d9deba1":"eliminarPizza","6064bbe5dda1a9aaccc8b42bf39b01544369ef624c":"insertarPedido","6070a935c1ed068761074e51b4f2417a8b2736a611":"register","60ae2d4038ad597343619ad4acdd0e47ccd4da83e1":"eliminarPedido","60e4a48981c72405209d900521dda8d749b4100e14":"login","60ffb06797ef8f5cc19875e6bc687b723b3d6ed697":"modificarPedido"} */ __turbopack_esm__({
+/* __next_internal_action_entry_do_not_use__ {"000328415909af7cbaf130890596781b07c763ea1b":"logout","001f1e8a85040a97babfbf7e919de4d24182592387":"loginGoogle","004672839cc2d5e0c7bb704ceb4b9402f3e2cec4ec":"loginGithub","00f29742e5614cf00b76212f6e4e33facf9b3b4893":"loginDiscord","4011b8cc17028b635ccd8b4f7ac3bbfcaf49aa6f02":"loginResend","40345cfb172172d2ecf80c62dd9fc1d4dacd5f8d5f":"eliminarRepartidor","406b48a2889a873962899807ef544180cab41c9f4b":"modificarRepartidor","4077177dedb9fa9e9054284b82b1a2019fd1180a5a":"modificarPizza","409214b639d0c52f4dfe16b13714e7fe3d89336767":"insertarRepartidor","40b2b4e120054c8044c8d7b34d24ecdab5db81031b":"insertarPizza","40b48b51842cc7d786cb2b3efa329c43be6d9deba1":"eliminarPizza","6064bbe5dda1a9aaccc8b42bf39b01544369ef624c":"insertarPedido","6070a935c1ed068761074e51b4f2417a8b2736a611":"register","60ae2d4038ad597343619ad4acdd0e47ccd4da83e1":"eliminarPedido","60e4a48981c72405209d900521dda8d749b4100e14":"login","60ffb06797ef8f5cc19875e6bc687b723b3d6ed697":"modificarPedido"} */ __turbopack_esm__({
     "eliminarPedido": (()=>eliminarPedido),
     "eliminarPizza": (()=>eliminarPizza),
     "eliminarRepartidor": (()=>eliminarRepartidor),
     "insertarPedido": (()=>insertarPedido),
     "insertarPizza": (()=>insertarPizza),
+    "insertarRepartidor": (()=>insertarRepartidor),
     "login": (()=>login),
     "loginDiscord": (()=>loginDiscord),
     "loginGithub": (()=>loginGithub),
@@ -438,6 +439,17 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ logout() {
     } catch (error) {
         throw error;
     }
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarRepartidor(formData) {
+    const nombre = formData.get('nombre');
+    const telefono = formData.get('telefono');
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].repartidor.create({
+        data: {
+            nombre: nombre,
+            telefono: telefono
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/repartidores');
 }
 async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ modificarRepartidor(formData) {
     const id = Number(formData.get('id'));
@@ -586,6 +598,7 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ eliminarPizza(formData)
     loginDiscord,
     loginResend,
     logout,
+    insertarRepartidor,
     modificarRepartidor,
     eliminarRepartidor,
     insertarPedido,
@@ -602,6 +615,7 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ eliminarPizza(formData)
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(loginDiscord, "00f29742e5614cf00b76212f6e4e33facf9b3b4893", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(loginResend, "4011b8cc17028b635ccd8b4f7ac3bbfcaf49aa6f02", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(logout, "000328415909af7cbaf130890596781b07c763ea1b", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(insertarRepartidor, "409214b639d0c52f4dfe16b13714e7fe3d89336767", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(modificarRepartidor, "406b48a2889a873962899807ef544180cab41c9f4b", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(eliminarRepartidor, "40345cfb172172d2ecf80c62dd9fc1d4dacd5f8d5f", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(insertarPedido, "6064bbe5dda1a9aaccc8b42bf39b01544369ef624c", null);
@@ -643,12 +657,12 @@ async function Header() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {}, void 0, false, {
                             fileName: "[project]/src/components/header.js",
                             lineNumber: 15,
-                            columnNumber: 21
+                            columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/header.js",
                         lineNumber: 14,
-                        columnNumber: 17
+                        columnNumber: 13
                     }, this),
                     session?.user?.role === 'ADMIN' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         href: "/admin",
@@ -656,7 +670,7 @@ async function Header() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/header.js",
                         lineNumber: 18,
-                        columnNumber: 24
+                        columnNumber: 20
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         href: "/dashboard",
@@ -664,7 +678,7 @@ async function Header() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/header.js",
                         lineNumber: 20,
-                        columnNumber: 17
+                        columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         href: "/about",
@@ -672,13 +686,37 @@ async function Header() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/header.js",
                         lineNumber: 21,
-                        columnNumber: 17
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/repartidores",
+                        children: "Repartidores"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/header.js",
+                        lineNumber: 22,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/pedidos",
+                        children: "Pedidos"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/header.js",
+                        lineNumber: 23,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/pizzas",
+                        children: "Pizzas"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/header.js",
+                        lineNumber: 24,
+                        columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/header.js",
                 lineNumber: 13,
-                columnNumber: 13
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex gap-4",
@@ -688,25 +726,25 @@ async function Header() {
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "[project]/src/components/header.js",
-                        lineNumber: 25,
-                        columnNumber: 29
+                        lineNumber: 28,
+                        columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/header.js",
-                    lineNumber: 25,
-                    columnNumber: 23
+                    lineNumber: 28,
+                    columnNumber: 19
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     href: "/auth/login",
                     children: "Login"
                 }, void 0, false, {
                     fileName: "[project]/src/components/header.js",
-                    lineNumber: 26,
-                    columnNumber: 23
+                    lineNumber: 29,
+                    columnNumber: 19
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/header.js",
-                lineNumber: 23,
-                columnNumber: 13
+                lineNumber: 26,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
