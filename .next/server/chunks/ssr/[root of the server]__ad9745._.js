@@ -86,40 +86,119 @@ module.exports = mod;
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
 __turbopack_esm__({
-    "prisma": (()=>prisma)
+    "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2c$__cjs$29$__ = __turbopack_import__("[externals]/@prisma/client [external] (@prisma/client, cjs)");
 ;
-const prisma = globalThis.prisma || new __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2c$__cjs$29$__["PrismaClient"]();
-if ("TURBOPACK compile-time truthy", 1) globalThis.prisma = prisma;
+const prisma = global.prisma || new __TURBOPACK__imported__module__$5b$externals$5d2f40$prisma$2f$client__$5b$external$5d$__$2840$prisma$2f$client$2c$__cjs$29$__["PrismaClient"]();
+if ("TURBOPACK compile-time truthy", 1) global.prisma = prisma;
+const __TURBOPACK__default__export__ = prisma;
 }}),
 "[project]/src/lib/data.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
-__turbopack_esm__({
+/* __next_internal_action_entry_do_not_use__ {"40c1fefa8dbd55dd05e52ba32628ef2a8e2c4ee3ab":"getUserById","40fea6522c05a702366d04c650bd4bf22164febb61":"getUserByEmail","7f0a3d0a7883ded8bc9dffa5e2736db031fec8c21b":"obtenerRepartidores","7f0fe24d8f4c5c09317287af1095cd427a24bca2f4":"obtenerPizza","7f2bad15be616a286c7a251d2f2da68ccde9b27463":"obtenerPizzas","7f3213cccd80716a07bb976b729c439302499cec0e":"obtenerRepartidor","7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5":"obtenerPedido","7fcc068938876be43085e88f14565b3929014db259":"obtenerPedidos"} */ __turbopack_esm__({
     "getUserByEmail": (()=>getUserByEmail),
-    "getUserById": (()=>getUserById)
+    "getUserById": (()=>getUserById),
+    "obtenerPedido": (()=>obtenerPedido),
+    "obtenerPedidos": (()=>obtenerPedidos),
+    "obtenerPizza": (()=>obtenerPizza),
+    "obtenerPizzas": (()=>obtenerPizzas),
+    "obtenerRepartidor": (()=>obtenerRepartidor),
+    "obtenerRepartidores": (()=>obtenerRepartidores)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/server-reference.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$app$2d$render$2f$encryption$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/app-render/encryption.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/lib/prisma.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-validate.js [app-rsc] (ecmascript)");
 ;
-async function getUserById(id) {
-    const user = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].user.findUnique({
+;
+;
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ getUserById(id) {
+    const user = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].user.findUnique({
         where: {
             id
         }
     });
     return user;
 }
-async function getUserByEmail(email) {
-    const user = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].user.findUnique({
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ getUserByEmail(email) {
+    const user = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].user.findUnique({
         where: {
             email
         }
     });
     return user;
 }
+async function obtenerRepartidores() {
+    const repartidores = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].repartidor.findMany();
+    return repartidores;
+}
+async function obtenerRepartidor(id) {
+    const repartidor = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].repartidor.findUnique({
+        where: {
+            id: +id
+        }
+    });
+    return repartidor;
+}
+// ---------------------   PEDIDOS -----------------------
+async function obtenerPedidos() {
+    const pedidos = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pedido.findMany({
+        include: {
+            repartidor: true,
+            pizzas: true
+        }
+    });
+    return pedidos;
+}
+async function obtenerPedido(id) {
+    const pedido = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pedido.findUnique({
+        where: {
+            id: +id
+        },
+        include: {
+            repartidor: true,
+            pizzas: true
+        }
+    });
+    return pedido;
+}
+// ---------------------   PIZZAS -----------------------
+async function obtenerPizzas() {
+    const pizzas = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.findMany();
+    return pizzas;
+}
+async function obtenerPizza(id) {
+    const pizza = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.findUnique({
+        where: {
+            id: +id
+        }
+    });
+    return pizza;
+}
+;
+;
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
+    getUserById,
+    getUserByEmail,
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerRepartidores,
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerRepartidor,
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPedidos,
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPedido,
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPizzas,
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPizza
+]);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getUserById, "40c1fefa8dbd55dd05e52ba32628ef2a8e2c4ee3ab", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getUserByEmail, "40fea6522c05a702366d04c650bd4bf22164febb61", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerRepartidores, "7f0a3d0a7883ded8bc9dffa5e2736db031fec8c21b", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerRepartidor, "7f3213cccd80716a07bb976b729c439302499cec0e", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPedidos, "7fcc068938876be43085e88f14565b3929014db259", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPedido, "7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPizzas, "7f2bad15be616a286c7a251d2f2da68ccde9b27463", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPizza, "7f0fe24d8f4c5c09317287af1095cd427a24bca2f4", null);
 }}),
 "[project]/src/auth.config.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -182,7 +261,7 @@ const options = {
     session: {
         strategy: 'jwt'
     },
-    adapter: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$auth$2f$prisma$2d$adapter$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["PrismaAdapter"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"]),
+    adapter: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$auth$2f$prisma$2d$adapter$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["PrismaAdapter"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"]),
     pages: {
         signIn: '/auth/login',
         signOut: '/auth/logout',
@@ -190,7 +269,7 @@ const options = {
     },
     events: {
         async linkAccount ({ user }) {
-            await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].user.update({
+            await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].user.update({
                 where: {
                     id: user.id
                 },
@@ -226,13 +305,21 @@ const { handlers: { GET, POST }, auth, signIn, signOut } = (0, __TURBOPACK__impo
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
-/* __next_internal_action_entry_do_not_use__ {"000328415909af7cbaf130890596781b07c763ea1b":"logout","001f1e8a85040a97babfbf7e919de4d24182592387":"loginGoogle","004672839cc2d5e0c7bb704ceb4b9402f3e2cec4ec":"loginGithub","00f29742e5614cf00b76212f6e4e33facf9b3b4893":"loginDiscord","4011b8cc17028b635ccd8b4f7ac3bbfcaf49aa6f02":"loginResend","6070a935c1ed068761074e51b4f2417a8b2736a611":"register","60e4a48981c72405209d900521dda8d749b4100e14":"login"} */ __turbopack_esm__({
+/* __next_internal_action_entry_do_not_use__ {"000328415909af7cbaf130890596781b07c763ea1b":"logout","001f1e8a85040a97babfbf7e919de4d24182592387":"loginGoogle","004672839cc2d5e0c7bb704ceb4b9402f3e2cec4ec":"loginGithub","00f29742e5614cf00b76212f6e4e33facf9b3b4893":"loginDiscord","4011b8cc17028b635ccd8b4f7ac3bbfcaf49aa6f02":"loginResend","40345cfb172172d2ecf80c62dd9fc1d4dacd5f8d5f":"eliminarRepartidor","406b48a2889a873962899807ef544180cab41c9f4b":"modificarRepartidor","4077177dedb9fa9e9054284b82b1a2019fd1180a5a":"modificarPizza","40b2b4e120054c8044c8d7b34d24ecdab5db81031b":"insertarPizza","40b48b51842cc7d786cb2b3efa329c43be6d9deba1":"eliminarPizza","6064bbe5dda1a9aaccc8b42bf39b01544369ef624c":"insertarPedido","6070a935c1ed068761074e51b4f2417a8b2736a611":"register","60ae2d4038ad597343619ad4acdd0e47ccd4da83e1":"eliminarPedido","60e4a48981c72405209d900521dda8d749b4100e14":"login","60ffb06797ef8f5cc19875e6bc687b723b3d6ed697":"modificarPedido"} */ __turbopack_esm__({
+    "eliminarPedido": (()=>eliminarPedido),
+    "eliminarPizza": (()=>eliminarPizza),
+    "eliminarRepartidor": (()=>eliminarRepartidor),
+    "insertarPedido": (()=>insertarPedido),
+    "insertarPizza": (()=>insertarPizza),
     "login": (()=>login),
     "loginDiscord": (()=>loginDiscord),
     "loginGithub": (()=>loginGithub),
     "loginGoogle": (()=>loginGoogle),
     "loginResend": (()=>loginResend),
     "logout": (()=>logout),
+    "modificarPedido": (()=>modificarPedido),
+    "modificarPizza": (()=>modificarPizza),
+    "modificarRepartidor": (()=>modificarRepartidor),
     "register": (()=>register)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/server-reference.js [app-rsc] (ecmascript)");
@@ -241,7 +328,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$bcryptjs$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/lib/prisma.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$auth$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/auth.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/lib/data.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/cache.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-validate.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -263,7 +352,7 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ register(prevState, for
     // Encriptamos password 
     const hashedPassword = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$bcryptjs$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].hash(password, 10);
     // Guardamos credenciales en base datos
-    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].user.create({
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].user.create({
         data: {
             name,
             email,
@@ -350,6 +439,144 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ logout() {
         throw error;
     }
 }
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ modificarRepartidor(formData) {
+    const id = Number(formData.get('id'));
+    const nombre = formData.get('nombre');
+    const telefono = formData.get('telefono');
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].repartidor.update({
+        where: {
+            id: id
+        },
+        data: {
+            nombre: nombre,
+            telefono: telefono
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/repartidores');
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ eliminarRepartidor(formData) {
+    const id = Number(formData.get('id'));
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].repartidor.delete({
+        where: {
+            id: id
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/repartidores');
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarPedido(prevState, formData) {
+    const fecha_hora = new Date(formData.get('fecha_hora'));
+    const nombre_cliente = formData.get('nombre_cliente');
+    const direccion_cliente = formData.get('direccion_cliente');
+    const repartidorId = Number(formData.get('repartidorId')) || null;
+    const pizzasIDs = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.findMany({
+        select: {
+            id: true
+        }
+    });
+    // console.log(pizzasIDs);
+    const connect = pizzasIDs.filter((p)=>formData.get(`pizza${p.id}`) !== null);
+    // console.log(connect);
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pedido.create({
+        data: {
+            fecha_hora: fecha_hora,
+            nombre_cliente: nombre_cliente,
+            direccion_cliente: direccion_cliente,
+            repartidorId: repartidorId,
+            pizzas: {
+                connect
+            }
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/pedidos');
+    return {
+        success: 'Operación realizada correctamente'
+    };
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ modificarPedido(prevState, formData) {
+    const id = Number(formData.get('id'));
+    const fecha_hora = new Date(formData.get('fecha_hora'));
+    const nombre_cliente = formData.get('nombre_cliente');
+    const direccion_cliente = formData.get('direccion_cliente');
+    const repartidorId = Number(formData.get('repartidorId')) || null;
+    const pizzasIDs = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.findMany({
+        select: {
+            id: true
+        }
+    });
+    // console.log(pizzasIDs);
+    const connect = pizzasIDs.filter((p)=>formData.get(`pizza${p.id}`) !== null);
+    const disconnect = pizzasIDs.filter((p)=>formData.get(`pizza${p.id}`) === null);
+    // console.log(connect);
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pedido.update({
+        where: {
+            id: id
+        },
+        data: {
+            fecha_hora: fecha_hora,
+            nombre_cliente: nombre_cliente,
+            direccion_cliente: direccion_cliente,
+            repartidorId: repartidorId,
+            pizzas: {
+                connect,
+                disconnect
+            }
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/pedidos');
+    return {
+        success: 'Operación realizada correctamente'
+    };
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ eliminarPedido(prevState, formData) {
+    const id = Number(formData.get('id'));
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pedido.delete({
+        where: {
+            id: id
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/pedidos');
+    return {
+        success: 'Operación realizada correctamente'
+    };
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarPizza(formData) {
+    const nombre = formData.get('nombre');
+    const precio = Number(formData.get('precio'));
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.create({
+        data: {
+            nombre: nombre,
+            precio: precio
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/pizzas');
+    return {
+        success: 'Éxito al realizar la operación'
+    };
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ modificarPizza(formData) {
+    const id = Number(formData.get('id'));
+    const nombre = formData.get('nombre');
+    const precio = Number(formData.get('precio'));
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.update({
+        where: {
+            id: id
+        },
+        data: {
+            nombre: nombre,
+            precio: precio
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/pizzas');
+}
+async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ eliminarPizza(formData) {
+    const id = Number(formData.get('id'));
+    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.delete({
+        where: {
+            id: id
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/pizzas');
+}
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     register,
@@ -358,7 +585,15 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ logout() {
     loginGithub,
     loginDiscord,
     loginResend,
-    logout
+    logout,
+    modificarRepartidor,
+    eliminarRepartidor,
+    insertarPedido,
+    modificarPedido,
+    eliminarPedido,
+    insertarPizza,
+    modificarPizza,
+    eliminarPizza
 ]);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(register, "6070a935c1ed068761074e51b4f2417a8b2736a611", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(login, "60e4a48981c72405209d900521dda8d749b4100e14", null);
@@ -367,6 +602,14 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ logout() {
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(loginDiscord, "00f29742e5614cf00b76212f6e4e33facf9b3b4893", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(loginResend, "4011b8cc17028b635ccd8b4f7ac3bbfcaf49aa6f02", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(logout, "000328415909af7cbaf130890596781b07c763ea1b", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(modificarRepartidor, "406b48a2889a873962899807ef544180cab41c9f4b", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(eliminarRepartidor, "40345cfb172172d2ecf80c62dd9fc1d4dacd5f8d5f", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(insertarPedido, "6064bbe5dda1a9aaccc8b42bf39b01544369ef624c", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(modificarPedido, "60ffb06797ef8f5cc19875e6bc687b723b3d6ed697", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(eliminarPedido, "60ae2d4038ad597343619ad4acdd0e47ccd4da83e1", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(insertarPizza, "40b2b4e120054c8044c8d7b34d24ecdab5db81031b", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(modificarPizza, "4077177dedb9fa9e9054284b82b1a2019fd1180a5a", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(eliminarPizza, "40b48b51842cc7d786cb2b3efa329c43be6d9deba1", null);
 }}),
 "[project]/src/components/header.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
