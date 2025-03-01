@@ -1,11 +1,12 @@
 {
   "/page": "app/page.js",
-  "/auth/login/page": "app/auth/login/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/about/page": "app/about/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
   "/dashboard/page": "app/dashboard/page.js",
+  "/repartidores/page": "app/repartidores/page.js",
   "/pedidos/page": "app/pedidos/page.js",
   "/pizzas/page": "app/pizzas/page.js",
-  "/repartidores/page": "app/repartidores/page.js",
-  "/about/page": "app/about/page.js"
+  "/productos/page": "app/productos/page.js",
+  "/proveedores/page": "app/proveedores/page.js"
 }

@@ -11,25 +11,49 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
 function About() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-lg border border-gray-100 mt-12",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "text-3xl font-bold",
-                children: "Página About"
+                className: "text-4xl font-semibold text-center text-gray-800 mb-6",
+                children: "Sobre Nuestra Pizzería"
             }, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 6,
+                lineNumber: 4,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                className: "text-lg text-gray-700 leading-relaxed mb-6",
+                children: [
+                    "Bienvenidos a ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                        children: "La Bella Pizza"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/about/page.js",
+                        lineNumber: 6,
+                        columnNumber: 23
+                    }, this),
+                    ", donde servimos pizzas auténticas y hechas a mano con los ingredientes más frescos. Nuestra pizzería ha estado sirviendo a la comunidad durante más de 20 años, ofreciendo una variedad de opciones deliciosas, desde la clásica Margherita hasta creaciones gourmet únicas. Cada pizza se elabora con amor y se hornea a la perfección en nuestro horno de leña, para un sabor verdaderamente inolvidable."
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/about/page.js",
+                lineNumber: 5,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-lg text-gray-700 leading-relaxed mb-6",
+                children: "En La Bella Pizza, nos enorgullece usar solo los mejores ingredientes, provenientes localmente siempre que sea posible. Nuestra masa se prepara fresca todos los días y nuestras salsas se elaboran desde cero, utilizando tomates maduros y una mezcla especial de hierbas. Ya sea que prefieras una pizza clásica de queso o algo más aventurero, como nuestra pizza de Trufa y Champiñones o la de Pollo BBQ, tenemos algo para todos los gustos."
             }, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, this)
         ]
-    }, void 0, true);
+    }, void 0, true, {
+        fileName: "[project]/src/app/about/page.js",
+        lineNumber: 3,
+        columnNumber: 5
+    }, this);
 }
 const __TURBOPACK__default__export__ = About;
 }}),
