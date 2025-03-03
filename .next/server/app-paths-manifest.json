@@ -1,4 +1,13 @@
 {
   "/page": "app/page.js",
-  "/auth/login/page": "app/auth/login/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/pizzas/page": "app/pizzas/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/pedidos/page": "app/pedidos/page.js",
+  "/repartidores/page": "app/repartidores/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/about/page": "app/about/page.js",
+  "/proveedores/page": "app/proveedores/page.js",
+  "/productos/page": "app/productos/page.js"
 }

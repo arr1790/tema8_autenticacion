@@ -320,17 +320,17 @@ async function Pizzas() {
                     children: "Insertar"
                 }, void 0, false, {
                     fileName: "[project]/src/components/pizzas/lista.jsx",
-                    lineNumber: 17,
+                    lineNumber: 16,
                     columnNumber: 37
                 }, void 0),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$pizzas$2f$insertar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/pizzas/lista.jsx",
-                    lineNumber: 18,
+                    lineNumber: 17,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/pizzas/lista.jsx",
-                lineNumber: 17,
+                lineNumber: 16,
                 columnNumber: 17
             }, this),
             pizzas.map((pizza)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -339,14 +339,23 @@ async function Pizzas() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-col gap-4",
                             children: [
+                                pizza.image && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: pizza.image,
+                                    alt: pizza.nombre,
+                                    className: "w-full h-40 object-cover rounded-lg"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/pizzas/lista.jsx",
+                                    lineNumber: 26,
+                                    columnNumber: 29
+                                }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                     href: `/pizzas/${pizza.id}`,
                                     className: "font-bold cursor-pointer",
                                     children: pizza.nombre
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/pizzas/lista.jsx",
-                                    lineNumber: 26,
-                                    columnNumber: 29
+                                    lineNumber: 33,
+                                    columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
@@ -355,8 +364,8 @@ async function Pizzas() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/pizzas/lista.jsx",
-                                    lineNumber: 29,
-                                    columnNumber: 29
+                                    lineNumber: 36,
+                                    columnNumber: 25
                                 }, this),
                                 session?.user?.role === "ADMIN" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: [
@@ -366,20 +375,20 @@ async function Pizzas() {
                                                 children: "Modificar"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pizzas/lista.jsx",
-                                                lineNumber: 32,
-                                                columnNumber: 57
+                                                lineNumber: 40,
+                                                columnNumber: 53
                                             }, void 0),
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$pizzas$2f$modificar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 pizza: pizza
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pizzas/lista.jsx",
-                                                lineNumber: 33,
-                                                columnNumber: 41
+                                                lineNumber: 41,
+                                                columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/pizzas/lista.jsx",
-                                            lineNumber: 32,
-                                            columnNumber: 37
+                                            lineNumber: 40,
+                                            columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             openElement: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -387,44 +396,44 @@ async function Pizzas() {
                                                 children: "Eliminar"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pizzas/lista.jsx",
-                                                lineNumber: 36,
-                                                columnNumber: 57
+                                                lineNumber: 44,
+                                                columnNumber: 53
                                             }, void 0),
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$pizzas$2f$eliminar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 pizza: pizza
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pizzas/lista.jsx",
-                                                lineNumber: 37,
-                                                columnNumber: 41
+                                                lineNumber: 45,
+                                                columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/pizzas/lista.jsx",
-                                            lineNumber: 36,
-                                            columnNumber: 37
+                                            lineNumber: 44,
+                                            columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/pizzas/lista.jsx",
-                            lineNumber: 25,
-                            columnNumber: 25
+                            lineNumber: 23,
+                            columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                             fileName: "[project]/src/components/pizzas/lista.jsx",
-                            lineNumber: 43,
-                            columnNumber: 25
+                            lineNumber: 50,
+                            columnNumber: 21
                         }, this)
                     ]
                 }, pizza.id, true, {
                     fileName: "[project]/src/components/pizzas/lista.jsx",
-                    lineNumber: 24,
-                    columnNumber: 21
+                    lineNumber: 22,
+                    columnNumber: 17
                 }, this))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/pizzas/lista.jsx",
-        lineNumber: 15,
+        lineNumber: 14,
         columnNumber: 9
     }, this);
 }
