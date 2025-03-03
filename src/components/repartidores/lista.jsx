@@ -26,8 +26,8 @@ export default async function Repartidores() {
                             <p>Teléfono: {repartidor.telefono}</p>
                             <img
                                 src={repartidor.imagen}
-                                alt="imagenPizza"
-                                className="w-24 h-24 rounded-full object-cover"
+                                alt="imagenRepartidor"
+                                className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform duration-200"
                             />
                             {session?.user?.role === "ADMIN" && (
                                 <>

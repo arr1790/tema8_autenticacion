@@ -418,6 +418,10 @@ img, video {
   height: 1.75rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -446,12 +450,20 @@ img, video {
   width: 100%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 @keyframes pulse {
@@ -466,6 +478,14 @@ img, video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-2 {
@@ -545,6 +565,10 @@ img, video {
   border-bottom-width: 1px;
 }
 
+.border-l-4 {
+  border-left-width: 4px;
+}
+
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
@@ -563,6 +587,16 @@ img, video {
 .border-slate-400 {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity, 1));
+}
+
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[snow\] {
@@ -703,6 +737,11 @@ img, video {
   padding-bottom: 1rem;
 }
 
+.py-1 {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -735,6 +774,11 @@ img, video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -855,6 +899,10 @@ img, video {
 
 .duration-150 {
   transition-duration: .15s;
+}
+
+.duration-200 {
+  transition-duration: .2s;
 }
 
 :root {
