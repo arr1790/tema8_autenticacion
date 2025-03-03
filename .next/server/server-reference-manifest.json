@@ -29,6 +29,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -38,7 +42,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "40c1fefa8dbd55dd05e52ba32628ef2a8e2c4ee3ab": {
@@ -70,6 +75,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -79,7 +88,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "40fea6522c05a702366d04c650bd4bf22164febb61": {
@@ -111,6 +121,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -120,7 +134,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "60e4a48981c72405209d900521dda8d749b4100e14": {
@@ -152,6 +167,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -161,7 +180,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "7f2bad15be616a286c7a251d2f2da68ccde9b27463": {
@@ -193,6 +213,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -202,7 +226,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "40b2b4e120054c8044c8d7b34d24ecdab5db81031b": {
@@ -234,6 +259,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -243,7 +272,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5": {
@@ -275,6 +305,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -284,7 +318,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "7f0fe24d8f4c5c09317287af1095cd427a24bca2f4": {
@@ -316,6 +351,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -325,7 +364,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "7f0a3d0a7883ded8bc9dffa5e2736db031fec8c21b": {
@@ -357,6 +397,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -366,7 +410,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "6064bbe5dda1a9aaccc8b42bf39b01544369ef624c": {
@@ -398,6 +443,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -407,7 +456,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "001f1e8a85040a97babfbf7e919de4d24182592387": {
@@ -439,6 +489,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -448,7 +502,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "4011b8cc17028b635ccd8b4f7ac3bbfcaf49aa6f02": {
@@ -480,6 +535,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -489,7 +548,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "4077177dedb9fa9e9054284b82b1a2019fd1180a5a": {
@@ -521,6 +581,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -530,7 +594,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "7f3213cccd80716a07bb976b729c439302499cec0e": {
@@ -562,6 +627,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -571,7 +640,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "60ae2d4038ad597343619ad4acdd0e47ccd4da83e1": {
@@ -603,6 +673,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -612,7 +686,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "6070a935c1ed068761074e51b4f2417a8b2736a611": {
@@ -644,6 +719,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -653,7 +732,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "7fcc068938876be43085e88f14565b3929014db259": {
@@ -685,6 +765,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -694,7 +778,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "rsc",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "000328415909af7cbaf130890596781b07c763ea1b": {
@@ -726,6 +811,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -735,7 +824,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "40345cfb172172d2ecf80c62dd9fc1d4dacd5f8d5f": {
@@ -767,6 +857,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -776,7 +870,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "004672839cc2d5e0c7bb704ceb4b9402f3e2cec4ec": {
@@ -808,6 +903,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -817,7 +916,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "406b48a2889a873962899807ef544180cab41c9f4b": {
@@ -849,6 +949,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -858,7 +962,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "00f29742e5614cf00b76212f6e4e33facf9b3b4893": {
@@ -890,6 +995,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -899,7 +1008,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "409214b639d0c52f4dfe16b13714e7fe3d89336767": {
@@ -931,6 +1041,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -940,7 +1054,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     },
     "40b48b51842cc7d786cb2b3efa329c43be6d9deba1": {
@@ -972,6 +1087,10 @@
         "app/repartidores/page": {
           "moduleId": "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
           "async": false
+        },
+        "app/admin/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
         }
       },
       "layer": {
@@ -981,7 +1100,8 @@
         "app/pizzas/page": "rsc",
         "app/pedidos/page": "action-browser",
         "app/about/page": "rsc",
-        "app/repartidores/page": "rsc"
+        "app/repartidores/page": "rsc",
+        "app/admin/page": "rsc"
       }
     }
   },

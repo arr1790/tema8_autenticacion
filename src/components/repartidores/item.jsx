@@ -11,6 +11,7 @@ export default async function Repartidor({ id }) {
         <div>
             <div>Nombre: {repartidor.nombre}</div>
             <div>Teléfono: {repartidor.telefono}</div>
+            <div>Imagen: {repartidor.imagen}</div>
         </div>
     );
 }

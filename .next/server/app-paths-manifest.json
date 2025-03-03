@@ -6,5 +6,6 @@
   "/pedidos/page": "app/pedidos/page.js",
   "/about/page": "app/about/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/repartidores/page": "app/repartidores/page.js"
+  "/repartidores/page": "app/repartidores/page.js",
+  "/admin/page": "app/admin/page.js"
 }

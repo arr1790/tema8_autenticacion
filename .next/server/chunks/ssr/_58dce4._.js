@@ -97,12 +97,29 @@ function RepartidorInsertar() {
                 lineNumber: 12,
                 columnNumber: 13
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Imagen:",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        name: "imagen",
+                        placeholder: "Imagen"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/repartidores/insertar.jsx",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/repartidores/insertar.jsx",
+                lineNumber: 16,
+                columnNumber: 13
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 className: "p-2 rounded-lg bg-indigo-500 text-white cursor-pointer",
                 children: "Insertar repartidor"
             }, void 0, false, {
                 fileName: "[project]/src/components/repartidores/insertar.jsx",
-                lineNumber: 16,
+                lineNumber: 20,
                 columnNumber: 13
             }, this)
         ]
@@ -182,12 +199,29 @@ function RepartidorModificar({ repartidor }) {
                 lineNumber: 14,
                 columnNumber: 13
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Imagen:",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        name: "imagen",
+                        defaultValue: repartidor.imagen
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/repartidores/modificar.jsx",
+                        lineNumber: 19,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/repartidores/modificar.jsx",
+                lineNumber: 18,
+                columnNumber: 13
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 className: "p-2 rounded-lg bg-indigo-500 text-white cursor-pointer",
                 children: "Modificar"
             }, void 0, false, {
                 fileName: "[project]/src/components/repartidores/modificar.jsx",
-                lineNumber: 18,
+                lineNumber: 22,
                 columnNumber: 13
             }, this)
         ]

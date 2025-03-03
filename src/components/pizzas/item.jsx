@@ -11,6 +11,7 @@ export default async function Pizza({ id }) {
         <div>
             <div>Nombre: {pizza.nombre}</div>
             <div>Precio: {pizza.precio}</div>
+            <div>Imagen: {pizza.imagen}</div>
         </div>
     );
 }

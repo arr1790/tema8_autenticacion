@@ -13,6 +13,10 @@ function PizzaInsertar() {
                 <input name="precio" type='number' step={0.01} min={0} />
             </label>
 
+            <label>Imagen:
+                <input name="imagen" placeholder="Imagen" />
+            </label>
+
             <button className="p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar pizza</button>
         </form>
 

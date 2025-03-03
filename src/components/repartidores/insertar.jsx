@@ -13,6 +13,10 @@ function RepartidorInsertar() {
                 <input name='telefono' placeholder="Teléfono" />
             </label>
 
+            <label>Imagen:
+                <input name='imagen' placeholder="Imagen" />
+            </label>
+
             <button className="p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar repartidor</button>
         </form>
 
