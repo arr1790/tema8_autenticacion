@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { auth } from "@/auth"
-import { logout } from '@/lib/actions'
+import Link from 'next/link';
+import { auth } from "@/auth";
+import { logout } from '@/lib/actions';
 import { Home } from 'lucide-react';
 
 async function Header() {
@@ -20,8 +20,10 @@ async function Header() {
                 )}
                 <Link href="/about" className="text-white font-semibold hover:underline">About</Link>
                 <Link href="/repartidores" className="text-white font-semibold hover:underline">Repartidores</Link>
-                <Link href="/pedidos" className="text-white font-semibold hover:underline">Pedidos</Link>
                 <Link href="/pizzas" className="text-white font-semibold hover:underline">Pizzas</Link>
+                {session?.user?.role === 'ADMIN' && (
+                    <Link href="/pedidos" className="text-white font-semibold hover:underline">Pedidos</Link>
+                )}
             </nav>
             <div className="flex gap-4">
                 {session ? (
@@ -43,7 +45,7 @@ async function Header() {
                 )}
             </div>
         </header>
-    )
+    );
 }
 
 export default Header;

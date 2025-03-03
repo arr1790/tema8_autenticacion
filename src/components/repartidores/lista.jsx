@@ -12,9 +12,9 @@ export default async function Repartidores() {
     return (
         <div className="flex flex-col gap-4">
             {session?.user?.role === "ADMIN" && (
-            <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar</p>}>
-                <RepartidorInsertar />
-            </Modal>
+                <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar</p>}>
+                    <RepartidorInsertar />
+                </Modal>
             )}
             {
                 repartidores.map(repartidor =>
@@ -24,16 +24,21 @@ export default async function Repartidores() {
                                 {repartidor.nombre}
                             </Link>
                             <p>Teléfono: {repartidor.telefono}</p>
+                            <img
+                                src={repartidor.imagen}
+                                alt="imagenPizza"
+                                className="w-24 h-24 rounded-full object-cover"
+                            />
                             {session?.user?.role === "ADMIN" && (
                                 <>
-                            <Modal openElement={<span className="p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Modificar</span>}>
-                                <RepartidorModificar repartidor={repartidor} />
-                            </Modal>
+                                    <Modal openElement={<span className="p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Modificar</span>}>
+                                        <RepartidorModificar repartidor={repartidor} />
+                                    </Modal>
 
-                            <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Eliminar</p>}>
-                                <RepartidorEliminar repartidor={repartidor} />
-                            </Modal>
-                            </>
+                                    <Modal openElement={<p className="inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Eliminar</p>}>
+                                        <RepartidorEliminar repartidor={repartidor} />
+                                    </Modal>
+                                </>
                             )}
 
                         </div>

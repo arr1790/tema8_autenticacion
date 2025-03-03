@@ -39,6 +39,7 @@ model Account {
 model Repartidor {
   id       Int      @id @default(autoincrement())
   nombre   String
+  imagen   String?
   telefono String
   pedidos  Pedido[]
 
@@ -60,6 +61,7 @@ model Pedido {
 model Pizza {
   id      Int      @id @default(autoincrement())
   nombre  String
+  imagen  String?
   precio  Float
   pedidos Pedido[] @relation("PedidoToPizza")
 

@@ -129,11 +129,13 @@ export async function logout() {
 export async function insertarRepartidor(formData) {
     const nombre = formData.get('nombre')
     const telefono = formData.get('telefono')
+    const imagen = formData.get('imagen') || null
 
     await prisma.repartidor.create({
         data: {
             nombre: nombre,
             telefono: telefono,
+            imagen: imagen
         }
     })
 
@@ -146,6 +148,7 @@ export async function modificarRepartidor(formData) {
     const id = Number(formData.get('id'))
     const nombre = formData.get('nombre')
     const telefono = formData.get('telefono')
+    const imagen = formData.get('imagen')
 
 
     await prisma.repartidor.update({
@@ -155,6 +158,7 @@ export async function modificarRepartidor(formData) {
         data: {
             nombre: nombre,
             telefono: telefono,
+            imagen: imagen
         }
     })
 
@@ -190,9 +194,9 @@ export async function insertarPedido(prevState, formData) {
     const pizzasIDs = await prisma.pizza.findMany({
         select: { id: true }
     })
-    // console.log(pizzasIDs);
+
     const connect = pizzasIDs.filter(p => formData.get(`pizza${p.id}`) !== null)
-    // console.log(connect);
+ 
 
     await prisma.pedido.create({
         data: {
@@ -266,6 +270,7 @@ export async function eliminarPedido(prevState, formData) {
 export async function insertarPizza(formData) {
     const nombre = formData.get('nombre')
     const precio = Number(formData.get('precio'))
+    const imagen = formData.get('imagen')
 
 
     await prisma.pizza.create({
@@ -286,6 +291,7 @@ export async function modificarPizza(formData) {
     const id = Number(formData.get('id'))
     const nombre = formData.get('nombre')
     const precio = Number(formData.get('precio'))
+    const imagen = formData.get('imagen')
     
     await prisma.pizza.update({
         where: {
@@ -294,6 +300,7 @@ export async function modificarPizza(formData) {
         data: {
             nombre: nombre,
             precio: precio,
+            imagen: imagen
         }
     })
 

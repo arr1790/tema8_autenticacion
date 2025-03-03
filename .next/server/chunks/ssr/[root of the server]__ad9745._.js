@@ -443,10 +443,12 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ logout() {
 async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarRepartidor(formData) {
     const nombre = formData.get('nombre');
     const telefono = formData.get('telefono');
+    const imagen = formData.get('imagen') || null;
     await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].repartidor.create({
         data: {
             nombre: nombre,
-            telefono: telefono
+            telefono: telefono,
+            imagen: imagen
         }
     });
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/repartidores');
@@ -455,13 +457,15 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ modificarRepartidor(for
     const id = Number(formData.get('id'));
     const nombre = formData.get('nombre');
     const telefono = formData.get('telefono');
+    const imagen = formData.get('imagen');
     await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].repartidor.update({
         where: {
             id: id
         },
         data: {
             nombre: nombre,
-            telefono: telefono
+            telefono: telefono,
+            imagen: imagen
         }
     });
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/repartidores');
@@ -485,9 +489,7 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarPedido(prevStat
             id: true
         }
     });
-    // console.log(pizzasIDs);
     const connect = pizzasIDs.filter((p)=>formData.get(`pizza${p.id}`) !== null);
-    // console.log(connect);
     await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pedido.create({
         data: {
             fecha_hora: fecha_hora,
@@ -554,6 +556,7 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ eliminarPedido(prevStat
 async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarPizza(formData) {
     const nombre = formData.get('nombre');
     const precio = Number(formData.get('precio'));
+    const imagen = formData.get('imagen');
     await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.create({
         data: {
             nombre: nombre,
@@ -569,13 +572,15 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ modificarPizza(formData
     const id = Number(formData.get('id'));
     const nombre = formData.get('nombre');
     const precio = Number(formData.get('precio'));
+    const imagen = formData.get('imagen');
     await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.update({
         where: {
             id: id
         },
         data: {
             nombre: nombre,
-            precio: precio
+            precio: precio,
+            imagen: imagen
         }
     });
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/pizzas');
@@ -703,22 +708,22 @@ async function Header() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/pedidos",
-                        className: "text-white font-semibold hover:underline",
-                        children: "Pedidos"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/header.js",
-                        lineNumber: 23,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         href: "/pizzas",
                         className: "text-white font-semibold hover:underline",
                         children: "Pizzas"
                     }, void 0, false, {
                         fileName: "[project]/src/components/header.js",
-                        lineNumber: 24,
+                        lineNumber: 23,
                         columnNumber: 17
+                    }, this),
+                    session?.user?.role === 'ADMIN' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/pedidos",
+                        className: "text-white font-semibold hover:underline",
+                        children: "Pedidos"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/header.js",
+                        lineNumber: 25,
+                        columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
@@ -735,12 +740,12 @@ async function Header() {
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "[project]/src/components/header.js",
-                        lineNumber: 29,
+                        lineNumber: 31,
                         columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/header.js",
-                    lineNumber: 28,
+                    lineNumber: 30,
                     columnNumber: 21
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     href: "/auth/login",
@@ -748,12 +753,12 @@ async function Header() {
                     children: "Login"
                 }, void 0, false, {
                     fileName: "[project]/src/components/header.js",
-                    lineNumber: 37,
+                    lineNumber: 39,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/header.js",
-                lineNumber: 26,
+                lineNumber: 28,
                 columnNumber: 13
             }, this)
         ]

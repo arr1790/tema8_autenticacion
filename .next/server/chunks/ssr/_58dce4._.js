@@ -316,17 +316,17 @@ async function Repartidores() {
                 }, void 0, false, {
                     fileName: "[project]/src/components/repartidores/lista.jsx",
                     lineNumber: 15,
-                    columnNumber: 33
+                    columnNumber: 37
                 }, void 0),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$repartidores$2f$insertar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/repartidores/lista.jsx",
                     lineNumber: 16,
-                    columnNumber: 17
+                    columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/repartidores/lista.jsx",
                 lineNumber: 15,
-                columnNumber: 13
+                columnNumber: 17
             }, this),
             repartidores.map((repartidor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-4 bg-slate-200 rounded-lg",
@@ -353,6 +353,15 @@ async function Repartidores() {
                                     lineNumber: 26,
                                     columnNumber: 29
                                 }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: repartidor.imagen,
+                                    alt: "imagenPizza",
+                                    className: "w-24 h-24 rounded-full object-cover"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/repartidores/lista.jsx",
+                                    lineNumber: 27,
+                                    columnNumber: 29
+                                }, this),
                                 session?.user?.role === "ADMIN" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -361,20 +370,20 @@ async function Repartidores() {
                                                 children: "Modificar"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/repartidores/lista.jsx",
-                                                lineNumber: 29,
-                                                columnNumber: 49
+                                                lineNumber: 34,
+                                                columnNumber: 57
                                             }, void 0),
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$repartidores$2f$modificar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 repartidor: repartidor
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/repartidores/lista.jsx",
-                                                lineNumber: 30,
-                                                columnNumber: 33
+                                                lineNumber: 35,
+                                                columnNumber: 41
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/repartidores/lista.jsx",
-                                            lineNumber: 29,
-                                            columnNumber: 29
+                                            lineNumber: 34,
+                                            columnNumber: 37
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             openElement: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -382,20 +391,20 @@ async function Repartidores() {
                                                 children: "Eliminar"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/repartidores/lista.jsx",
-                                                lineNumber: 33,
-                                                columnNumber: 49
+                                                lineNumber: 38,
+                                                columnNumber: 57
                                             }, void 0),
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$repartidores$2f$eliminar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 repartidor: repartidor
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/repartidores/lista.jsx",
-                                                lineNumber: 34,
-                                                columnNumber: 33
+                                                lineNumber: 39,
+                                                columnNumber: 41
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/repartidores/lista.jsx",
-                                            lineNumber: 33,
-                                            columnNumber: 29
+                                            lineNumber: 38,
+                                            columnNumber: 37
                                         }, this)
                                     ]
                                 }, void 0, true)
@@ -407,7 +416,7 @@ async function Repartidores() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                             fileName: "[project]/src/components/repartidores/lista.jsx",
-                            lineNumber: 40,
+                            lineNumber: 45,
                             columnNumber: 25
                         }, this)
                     ]
