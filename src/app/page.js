@@ -10,9 +10,8 @@ export default async function Home() {
       <h1 className="text-4xl font-extrabold mb-6 text-center border-b border-gray-200">LA BELLA PIZZA 🍕</h1>
 
       <div className="space-y-4">
-        <h2 className="text-2xl font-bold">Datos Usuario:</h2>
+        <h2 className="text-2xl font-bold">Datos:</h2>
 
-       
         {session?.user?.role === "ADMIN" ? (
           <div className="grid grid-cols-2 gap-6">
             <Link
@@ -54,7 +53,6 @@ export default async function Home() {
           </div>
         ) : (
           <div className="grid grid-cols-2 gap-6">
-           
             <Link
               href="/repartidores"
               className="block p-4 rounded-lg bg-blue-600 text-white font-semibold text-center hover:bg-blue-700 transition-all"
