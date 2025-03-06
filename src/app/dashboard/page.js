@@ -16,6 +16,8 @@ async function page() {
                 <h2 className="text-2xl font-semibold text-gray-800">{sesion?.user.name}</h2>
                 <p className="text-lg text-gray-600 mb-2">{sesion?.user.email}</p>
                 <p className="text-lg text-indigo-600 italic">{sesion?.user.role}</p>
+                <p className="text-lg text-gray-600">📞 {sesion?.user.phone}</p>
+                <p className="text-lg text-gray-600">📌 {sesion?.user.pedido}</p>
             </div>
         </div>
     )

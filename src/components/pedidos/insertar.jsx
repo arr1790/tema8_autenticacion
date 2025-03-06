@@ -2,7 +2,7 @@
 import { insertarPedido } from "@/lib/actions";
 import { useActionState, useEffect, useId } from "react";
 
-function PedidoInsertar({ repartidores, pizzas }) {
+function PedidoInsertar({ repartidores, pizzas, user }) {
 
     const formId = useId()
     
@@ -18,14 +18,17 @@ function PedidoInsertar({ repartidores, pizzas }) {
 
     return (
         <form className="flex flex-col gap-4" action={action} id={formId}>
+            <input type="hidden" name="userId" defaultValue={user?.id}  />
             <h1 className="text-xl text-blue-500">Nuevo pedido</h1>
 
+
             <label> Fecha y hora:
-                <input name="fecha_hora" type="datetime-local" />
+                <input name="fecha_hora" type="datetime-local" defaultValue={new Date().toISOString().split('Z')[0]} />
             </label>
 
             <label> Nombre del cliente:
-                <input name="nombre_cliente" placeholder="Nombre cliente" />
+                <p className="font-bold">{user?.name}</p>
+                <input type="hidden" name="nombre_cliente" value={user?.name} />
             </label>
 
             <label> Dirección del cliente:
@@ -57,7 +60,7 @@ function PedidoInsertar({ repartidores, pizzas }) {
                 )
             }
 
-            <button className="p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar pedido</button>
+            <button disabled={pending} className=" disabled:bg-slate-500 p-2 rounded-lg bg-indigo-500 text-white cursor-pointer">Insertar pedido</button>
         </form>
 
     );

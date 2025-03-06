@@ -99,11 +99,12 @@ const __TURBOPACK__default__export__ = prisma;
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
-/* __next_internal_action_entry_do_not_use__ {"40c1fefa8dbd55dd05e52ba32628ef2a8e2c4ee3ab":"getUserById","40fea6522c05a702366d04c650bd4bf22164febb61":"getUserByEmail","7f0a3d0a7883ded8bc9dffa5e2736db031fec8c21b":"obtenerRepartidores","7f0fe24d8f4c5c09317287af1095cd427a24bca2f4":"obtenerPizza","7f2bad15be616a286c7a251d2f2da68ccde9b27463":"obtenerPizzas","7f3213cccd80716a07bb976b729c439302499cec0e":"obtenerRepartidor","7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5":"obtenerPedido","7fcc068938876be43085e88f14565b3929014db259":"obtenerPedidos"} */ __turbopack_esm__({
+/* __next_internal_action_entry_do_not_use__ {"40c1fefa8dbd55dd05e52ba32628ef2a8e2c4ee3ab":"getUserById","40fea6522c05a702366d04c650bd4bf22164febb61":"getUserByEmail","7f0a3d0a7883ded8bc9dffa5e2736db031fec8c21b":"obtenerRepartidores","7f0fe24d8f4c5c09317287af1095cd427a24bca2f4":"obtenerPizza","7f2bad15be616a286c7a251d2f2da68ccde9b27463":"obtenerPizzas","7f3213cccd80716a07bb976b729c439302499cec0e":"obtenerRepartidor","7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5":"obtenerPedido","7fcbebe52a10ec8bb5202317a3e39c0c663f77789f":"obtenerPedidosDelUsuario","7fcc068938876be43085e88f14565b3929014db259":"obtenerPedidos"} */ __turbopack_esm__({
     "getUserByEmail": (()=>getUserByEmail),
     "getUserById": (()=>getUserById),
     "obtenerPedido": (()=>obtenerPedido),
     "obtenerPedidos": (()=>obtenerPedidos),
+    "obtenerPedidosDelUsuario": (()=>obtenerPedidosDelUsuario),
     "obtenerPizza": (()=>obtenerPizza),
     "obtenerPizzas": (()=>obtenerPizzas),
     "obtenerRepartidor": (()=>obtenerRepartidor),
@@ -166,6 +167,18 @@ async function obtenerPedido(id) {
     });
     return pedido;
 }
+async function obtenerPedidosDelUsuario(id) {
+    const pedidos = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pedido.findMany({
+        where: {
+            userId: id
+        },
+        include: {
+            repartidor: true,
+            pizzas: true
+        }
+    });
+    return pedidos;
+}
 // ---------------------   PIZZAS -----------------------
 async function obtenerPizzas() {
     const pizzas = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.findMany();
@@ -189,7 +202,8 @@ async function obtenerPizza(id) {
     /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPedidos,
     /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPedido,
     /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPizzas,
-    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPizza
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPizza,
+    /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ obtenerPedidosDelUsuario
 ]);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getUserById, "40c1fefa8dbd55dd05e52ba32628ef2a8e2c4ee3ab", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getUserByEmail, "40fea6522c05a702366d04c650bd4bf22164febb61", null);
@@ -199,6 +213,7 @@ async function obtenerPizza(id) {
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPedido, "7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPizzas, "7f2bad15be616a286c7a251d2f2da68ccde9b27463", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPizza, "7f0fe24d8f4c5c09317287af1095cd427a24bca2f4", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(obtenerPedidosDelUsuario, "7fcbebe52a10ec8bb5202317a3e39c0c663f77789f", null);
 }}),
 "[project]/src/auth.config.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -290,6 +305,10 @@ const options = {
             if (!token.sub) return token;
             const user = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUserById"])(token.sub);
             if (!user) return token;
+            if (user) {
+                token.sub = user.id; // Asignamos el id al token
+                token.role = user.role; // Asignamos el rol al token
+            }
             token.role = user?.role;
             return token;
         }
@@ -483,6 +502,7 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarPedido(prevStat
     const fecha_hora = new Date(formData.get('fecha_hora'));
     const nombre_cliente = formData.get('nombre_cliente');
     const direccion_cliente = formData.get('direccion_cliente');
+    const userId = formData.get('userId');
     const repartidorId = Number(formData.get('repartidorId')) || null;
     const pizzasIDs = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].pizza.findMany({
         select: {
@@ -496,6 +516,7 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ insertarPedido(prevStat
             nombre_cliente: nombre_cliente,
             direccion_cliente: direccion_cliente,
             repartidorId: repartidorId,
+            userId: userId,
             pizzas: {
                 connect
             }

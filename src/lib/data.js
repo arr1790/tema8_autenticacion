@@ -56,6 +56,19 @@ async function obtenerPedido(id) {
   return pedido
 }
 
+async function obtenerPedidosDelUsuario(id) {
+const pedidos = await prisma.pedido.findMany({  
+      where: { userId: id },
+      include: {
+          repartidor: true,
+          pizzas: true,
+      }
+  })
+  return pedidos
+}
+  
+
+
 // ---------------------   PIZZAS -----------------------
 
 async function obtenerPizzas() {
@@ -78,5 +91,6 @@ export {
   obtenerPedidos,
   obtenerPedido,
   obtenerPizzas,
-  obtenerPizza
+  obtenerPizza,
+  obtenerPedidosDelUsuario
 }

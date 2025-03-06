@@ -40,6 +40,7 @@ __turbopack_esm__({
     "getUserById": (()=>getUserById),
     "obtenerPedido": (()=>obtenerPedido),
     "obtenerPedidos": (()=>obtenerPedidos),
+    "obtenerPedidosDelUsuario": (()=>obtenerPedidosDelUsuario),
     "obtenerPizza": (()=>obtenerPizza),
     "obtenerPizzas": (()=>obtenerPizzas),
     "obtenerRepartidor": (()=>obtenerRepartidor),
@@ -97,6 +98,18 @@ async function obtenerPedido(id) {
         }
     });
     return pedido;
+}
+async function obtenerPedidosDelUsuario(id) {
+    const pedidos = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["default"].pedido.findMany({
+        where: {
+            userId: id
+        },
+        include: {
+            repartidor: true,
+            pizzas: true
+        }
+    });
+    return pedidos;
 }
 // ---------------------   PIZZAS -----------------------
 async function obtenerPizzas() {
@@ -182,7 +195,7 @@ const config = {
      * - _next/image (image optimization files)
      * - favicon.ico, sitemap.xml, robots.txt (metadata files)
      * - $ (home page)
-     */ '/((?!api|images|auth|about|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|$).*)'
+     */ '/((?!api|images|auth|about|pizzas|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|$).*)'
     ]
 } // export const config = {
  //   matcher: [

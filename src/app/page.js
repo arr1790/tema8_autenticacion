@@ -66,6 +66,12 @@ export default async function Home() {
               <Pizza className="h-5 w-5 inline-block mr-2" /> Pizzas
             </Link>
             <Link
+              href="/pedidos"
+              className="block p-4 rounded-lg bg-red-600 text-white font-semibold text-center hover:bg-red-700 transition-all"
+            >
+              <ShoppingCart className="h-5 w-5 inline-block mr-2" /> Pedidos
+            </Link>
+            <Link
               href="/about"
               className="block p-4 rounded-lg bg-gray-200 text-gray-800 font-semibold text-center hover:bg-gray-300 transition-all"
             >

@@ -177,33 +177,39 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$auth$2e$js__$5b$app$2
 ;
 ;
 async function Pedidos() {
-    const pedidos = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedidos"])();
     const repartidores = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerRepartidores"])();
     const pizzas = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPizzas"])();
     const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$auth$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["auth"])();
+    let pedidos;
+    if (session?.user?.role === "ADMIN") {
+        pedidos = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedidos"])();
+    } else {
+        pedidos = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedidosDelUsuario"])(session?.user.id);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col gap-4",
         children: [
-            session?.user?.role === 'ADMIN' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 openElement: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "inline p-2 rounded-lg bg-indigo-500 text-white cursor-pointer",
-                    children: "Insertar"
+                    children: session?.user?.role === "ADMIN" ? "Insertar Pedido" : "Hacer un Pedido"
                 }, void 0, false, {
                     fileName: "[project]/src/components/pedidos/lista.jsx",
-                    lineNumber: 19,
-                    columnNumber: 33
+                    lineNumber: 27,
+                    columnNumber: 21
                 }, void 0),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$pedidos$2f$insertar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     repartidores: repartidores,
-                    pizzas: pizzas
+                    pizzas: pizzas,
+                    user: session?.user
                 }, void 0, false, {
                     fileName: "[project]/src/components/pedidos/lista.jsx",
-                    lineNumber: 20,
+                    lineNumber: 33,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/pedidos/lista.jsx",
-                lineNumber: 19,
+                lineNumber: 25,
                 columnNumber: 13
             }, this),
             pedidos.map((pedido)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -218,8 +224,8 @@ async function Pedidos() {
                                     children: new Date(pedido.fecha_hora).toLocaleString()
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/pedidos/lista.jsx",
-                                    lineNumber: 27,
-                                    columnNumber: 29
+                                    lineNumber: 40,
+                                    columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
@@ -228,8 +234,8 @@ async function Pedidos() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/pedidos/lista.jsx",
-                                    lineNumber: 30,
-                                    columnNumber: 29
+                                    lineNumber: 43,
+                                    columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
@@ -238,10 +244,10 @@ async function Pedidos() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/pedidos/lista.jsx",
-                                    lineNumber: 31,
-                                    columnNumber: 29
+                                    lineNumber: 44,
+                                    columnNumber: 25
                                 }, this),
-                                session?.user?.role === 'ADMIN' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                session?.user?.role === "ADMIN" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             openElement: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -249,8 +255,8 @@ async function Pedidos() {
                                                 children: "Modificar"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pedidos/lista.jsx",
-                                                lineNumber: 36,
-                                                columnNumber: 57
+                                                lineNumber: 49,
+                                                columnNumber: 53
                                             }, void 0),
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$pedidos$2f$modificar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 pedido: pedido,
@@ -258,13 +264,13 @@ async function Pedidos() {
                                                 pizzas: pizzas
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pedidos/lista.jsx",
-                                                lineNumber: 37,
-                                                columnNumber: 41
+                                                lineNumber: 50,
+                                                columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/pedidos/lista.jsx",
-                                            lineNumber: 36,
-                                            columnNumber: 37
+                                            lineNumber: 49,
+                                            columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$modal$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             openElement: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -272,44 +278,44 @@ async function Pedidos() {
                                                 children: "Eliminar"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pedidos/lista.jsx",
-                                                lineNumber: 40,
-                                                columnNumber: 57
+                                                lineNumber: 53,
+                                                columnNumber: 53
                                             }, void 0),
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$pedidos$2f$eliminar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                                 pedido: pedido
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/pedidos/lista.jsx",
-                                                lineNumber: 41,
-                                                columnNumber: 41
+                                                lineNumber: 54,
+                                                columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/pedidos/lista.jsx",
-                                            lineNumber: 40,
-                                            columnNumber: 37
+                                            lineNumber: 53,
+                                            columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/pedidos/lista.jsx",
-                            lineNumber: 26,
-                            columnNumber: 25
+                            lineNumber: 39,
+                            columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                             fileName: "[project]/src/components/pedidos/lista.jsx",
-                            lineNumber: 46,
-                            columnNumber: 25
+                            lineNumber: 59,
+                            columnNumber: 21
                         }, this)
                     ]
                 }, pedido.id, true, {
                     fileName: "[project]/src/components/pedidos/lista.jsx",
-                    lineNumber: 25,
-                    columnNumber: 21
+                    lineNumber: 38,
+                    columnNumber: 17
                 }, this))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/pedidos/lista.jsx",
-        lineNumber: 17,
+        lineNumber: 23,
         columnNumber: 9
     }, this);
 }
@@ -407,6 +413,7 @@ __turbopack_esm__({});
 ;
 ;
 ;
+;
 }}),
 "[project]/.next-internal/server/app/pedidos/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
@@ -447,6 +454,7 @@ __turbopack_esm__({
     "7f2bad15be616a286c7a251d2f2da68ccde9b27463": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPizzas"]),
     "7f3213cccd80716a07bb976b729c439302499cec0e": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerRepartidor"]),
     "7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedido"]),
+    "7fcbebe52a10ec8bb5202317a3e39c0c663f77789f": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedidosDelUsuario"]),
     "7fcc068938876be43085e88f14565b3929014db259": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedidos"])
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/lib/actions.js [app-rsc] (ecmascript)");
@@ -482,6 +490,7 @@ __turbopack_esm__({
     "7f2bad15be616a286c7a251d2f2da68ccde9b27463": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$pedidos$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7f2bad15be616a286c7a251d2f2da68ccde9b27463"]),
     "7f3213cccd80716a07bb976b729c439302499cec0e": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$pedidos$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7f3213cccd80716a07bb976b729c439302499cec0e"]),
     "7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$pedidos$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5"]),
+    "7fcbebe52a10ec8bb5202317a3e39c0c663f77789f": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$pedidos$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7fcbebe52a10ec8bb5202317a3e39c0c663f77789f"]),
     "7fcc068938876be43085e88f14565b3929014db259": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$pedidos$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7fcc068938876be43085e88f14565b3929014db259"])
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$pedidos$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__('[project]/.next-internal/server/app/pedidos/page/actions.js { ACTIONS_MODULE0 => "[project]/src/lib/actions.js [app-rsc] (ecmascript)", ACTIONS_MODULE1 => "[project]/src/lib/data.js [app-rsc] (ecmascript)" } [app-rsc] (ecmascript) <module evaluation>');

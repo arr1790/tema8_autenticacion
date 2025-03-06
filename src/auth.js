@@ -33,6 +33,10 @@ export const options = {
 
             const user = await getUserById(token.sub)
             if (!user) return token;
+            if (user) {
+                token.sub = user.id;           // Asignamos el id al token
+                token.role = user.role;        // Asignamos el rol al token
+            }
 
             token.role = user?.role
             return token

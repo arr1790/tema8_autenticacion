@@ -97,12 +97,29 @@ function RepartidorInsertar() {
                 lineNumber: 12,
                 columnNumber: 13
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Imagen:",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        name: "imagen",
+                        placeholder: "Imagen"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/repartidores/insertar.jsx",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/repartidores/insertar.jsx",
+                lineNumber: 16,
+                columnNumber: 13
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 className: "p-2 rounded-lg bg-indigo-500 text-white cursor-pointer",
                 children: "Insertar repartidor"
             }, void 0, false, {
                 fileName: "[project]/src/components/repartidores/insertar.jsx",
-                lineNumber: 16,
+                lineNumber: 20,
                 columnNumber: 13
             }, this)
         ]
@@ -182,12 +199,29 @@ function RepartidorModificar({ repartidor }) {
                 lineNumber: 14,
                 columnNumber: 13
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Imagen:",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        name: "imagen",
+                        defaultValue: repartidor.imagen
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/repartidores/modificar.jsx",
+                        lineNumber: 19,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/repartidores/modificar.jsx",
+                lineNumber: 18,
+                columnNumber: 13
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 className: "p-2 rounded-lg bg-indigo-500 text-white cursor-pointer",
                 children: "Modificar"
             }, void 0, false, {
                 fileName: "[project]/src/components/repartidores/modificar.jsx",
-                lineNumber: 18,
+                lineNumber: 22,
                 columnNumber: 13
             }, this)
         ]
@@ -356,7 +390,7 @@ async function Repartidores() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: repartidor.imagen,
                                     alt: "imagenRepartidor",
-                                    className: "w-24 h-24 rounded-full object-cover"
+                                    className: "w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform duration-200"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/repartidores/lista.jsx",
                                     lineNumber: 27,
@@ -526,6 +560,7 @@ __turbopack_esm__({});
 ;
 ;
 ;
+;
 }}),
 "[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/data.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
@@ -566,6 +601,7 @@ __turbopack_esm__({
     "7f2bad15be616a286c7a251d2f2da68ccde9b27463": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPizzas"]),
     "7f3213cccd80716a07bb976b729c439302499cec0e": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerRepartidor"]),
     "7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedido"]),
+    "7fcbebe52a10ec8bb5202317a3e39c0c663f77789f": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedidosDelUsuario"]),
     "7fcc068938876be43085e88f14565b3929014db259": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["obtenerPedidos"])
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/lib/actions.js [app-rsc] (ecmascript)");
@@ -601,6 +637,7 @@ __turbopack_esm__({
     "7f2bad15be616a286c7a251d2f2da68ccde9b27463": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$repartidores$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7f2bad15be616a286c7a251d2f2da68ccde9b27463"]),
     "7f3213cccd80716a07bb976b729c439302499cec0e": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$repartidores$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7f3213cccd80716a07bb976b729c439302499cec0e"]),
     "7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$repartidores$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7f8bf76cecbb2d01c662c02ce671b7309d0a8d04e5"]),
+    "7fcbebe52a10ec8bb5202317a3e39c0c663f77789f": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$repartidores$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7fcbebe52a10ec8bb5202317a3e39c0c663f77789f"]),
     "7fcc068938876be43085e88f14565b3929014db259": (()=>__TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$repartidores$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$exports$3e$__["7fcc068938876be43085e88f14565b3929014db259"])
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f$repartidores$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$data$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__('[project]/.next-internal/server/app/repartidores/page/actions.js { ACTIONS_MODULE0 => "[project]/src/lib/data.js [app-rsc] (ecmascript)", ACTIONS_MODULE1 => "[project]/src/lib/actions.js [app-rsc] (ecmascript)" } [app-rsc] (ecmascript) <module evaluation>');

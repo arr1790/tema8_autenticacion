@@ -188,6 +188,7 @@ export async function insertarPedido(prevState, formData) {
     const fecha_hora = new Date(formData.get('fecha_hora'))
     const nombre_cliente = formData.get('nombre_cliente')
     const direccion_cliente = formData.get('direccion_cliente')
+    const userId = formData.get('userId')
 
     const repartidorId = Number(formData.get('repartidorId')) || null
 
@@ -204,6 +205,7 @@ export async function insertarPedido(prevState, formData) {
             nombre_cliente: nombre_cliente,
             direccion_cliente: direccion_cliente,
             repartidorId: repartidorId,
+            userId: userId,
             pizzas: { connect }
         }
     })
